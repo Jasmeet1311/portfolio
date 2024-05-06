@@ -1,0 +1,89 @@
+@import "../../App.scss";
+.hero{
+    height: calc(100vh - 100px);
+    background: linear-gradient(180deg,#0c0c1d,#121232);
+    overflow: hidden;
+    position: relative;
+    .wrapper{
+        position: relative;
+        z-index: 2;
+        height: 100%;
+        width: 970px;
+        margin: auto;
+        .text-container{
+            height: 100%;
+            width:50%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 40px;
+            @include mobile{
+                height: 45%;
+                width: 40%;
+                gap: 30px;
+                align-items: center;
+                text-align: center;
+            }
+            
+            h2{
+                font-size: 30px;
+                color: purple;
+                letter-spacing: 10px;
+                @include mobile{
+                    letter-spacing: 5px;
+                }
+            }
+            h1{
+                font-size: 80px;
+                @include mobile{
+                    font-size: 34px;
+                }
+            }
+            .buttons{
+                a{
+                    padding: 20px;
+                    border: 1px solid white;
+                    border-radius: 10px;
+                    background-color: transparent;
+                    color: white;
+                    cursor: pointer;
+                    font-weight: 300;
+                    @include mobile{
+                        
+                        padding: 10px;
+                    }
+                    
+                }
+                .btn{
+                    margin-left: 20px;
+                    background-color: white;
+                    color: black;
+                }
+            }
+        }
+        
+    }
+    .img-container img{
+        width: 43%;
+        position: absolute;
+        top: 88px;
+        right: 71px;
+        @include mobile{
+            // height: 100%;
+            width: 72%;
+            top: unset;
+            bottom: 26%;
+            right: 14%;
+        }
+    }
+    .sliding-text-container{
+        position: absolute;
+        font-size: 250px;
+        bottom: -24px;
+        white-space: nowrap;
+        color: #ffffff07;
+        
+        
+    }
+}
+
